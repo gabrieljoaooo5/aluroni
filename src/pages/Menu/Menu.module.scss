@@ -1,7 +1,7 @@
 @import "styles/variables";
 @import "styles/breakpoints";
 
-.menu {
+.card {
   padding: 20px $padding-horizontal;
   @media (max-width: $desktop_xsm) {
     padding: 20px $padding-horizontal-mobile;
