@@ -11,7 +11,7 @@ interface Props {
 
 export default function Items(props: Props) {
     const [menuList, setMenuList] = useState(menu);
-    const { search, filter } = props;
+    const { search, filter, order } = props;
 
     function testSearch(title: string) {
         const regex = new RegExp(search, 'i');
@@ -23,10 +23,23 @@ export default function Items(props: Props) {
         return true;
     }
 
+    function orderList(newMenuList: typeof menu) {
+        switch(order) {
+            case 'portion': 
+              return newMenuList.sort((a, b) => a.size > b.size ? 1 : -1);
+            case 'amnt_people':
+              return newMenuList.sort((a,b) => a.serving > b.serving ? 1 : -1);
+            case 'price':
+              return newMenuList.sort((a,b) => a.price > b.price ? 1 : -1);
+            default:
+              return newMenuList; 
+          }
+    }
+
     useEffect(() => {
         const newMenuList = menu.filter(item => testSearch(item.title) && testFilter(item.category.id));
-        setMenuList(newMenuList);
-    }, [search, filter])
+        setMenuList(orderList(newMenuList));
+    }, [search, filter, orderList])
     return (
         <div className={styles.items}>
             {menuList.map(item => (
