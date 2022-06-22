@@ -1,0 +1,119 @@
+[
+    {
+      "title": "Mediterranean noodles",
+      "description": "Spaghetti noodles with seafood and spices, a specialty of the cuisine. Warning: Contains shrimp and other seafood!",
+      "photo": "assets/dishes/mediterranean_noodles.png",
+      "size": 400,
+      "serving": 2,
+      "price": 73.0,
+      "id": 1,
+      "category": {
+        "id": 1,
+        "label": "Pasta"
+      }
+    },
+    {
+      "title": "House noodles",
+      "description": "Pasta with seafood and spices, a specialty of the cuisine. Warning: Contains shrimp and other seafood!",
+      "photo": "assets/dishes/house_noodles.png",
+      "size": 400,
+      "serving": 2,
+      "price": 54.0,
+      "id": 2,
+      "category": {
+        "id": 1,
+        "label": "Pasta"
+      }
+    },
+    {
+      "title": "Noodles with chili",
+      "description": "Fettuccine noodles with chili sauce and spices.",
+      "photo": "assets/dishes/noodles_with_chili.png",
+      "size": 350,
+      "serving": 1,
+      "price": 58.0,
+      "id": 3,
+      "category": {
+        "id": 1,
+        "label": "Pasta"
+      }
+    },
+    {
+      "title": "House Salad with Grilled Salmon",
+      "description": "House salad (lettuce, arugula, carrots) with salmon.",
+      "photo": "assets/dishes/house_salad.png",
+      "size": 450,
+      "serving": 1,
+      "price": 42.0,
+      "id": 4,
+      "category": {
+        "id": 2,
+        "label": "Meat"
+      }
+    },
+    {
+      "title": "Steak with potatoes",
+      "description": "Beef steak (150g) on ​​the grill, with fries. Comes with rice and sauces.",
+      "photo": "assets/dishes/steak_with_potatoes.png",
+      "size": 550,
+      "serving": 2,
+      "price": 86.0,
+      "id": 5,
+      "category": {
+        "id": 2,
+        "label": "Meat"
+      }
+    },
+    {
+      "title": "Chopped picanha with vegetables and pasta",
+      "description": "400g of chopped picanha, with grilled vegetables and pasta chosen by the customer.",
+      "photo": "assets/dishes/chopped_picanha.png",
+      "size": 850,
+      "serving": 3,
+      "price": 123.0,
+      "id": 6,
+      "category": {
+        "id": 3,
+        "label": "Combos"
+      }
+    },
+    {
+      "title": "Vegan lasagna (soy meat)",
+      "description": "Vegan lasagna made with soy meat and special pasta.",
+      "photo": "assets/dishes/vegan_lasagna.png",
+      "size": 350,
+      "serving": 1,
+      "price": 45.0,
+      "id": 7,
+      "category": {
+        "id": 4,
+        "label": "Vegans"
+      }
+    },
+    {
+      "title": "Special salad",
+      "description": "Salad with avocado, mango, lettuce, chickpeas and more.",
+      "photo": "assets/dishes/special_salad.png",
+      "size": 350,
+      "serving": 1,
+      "price": 37.0,
+      "id": 8,
+      "category": {
+        "id": 4,
+        "label": "Vegans"
+      }
+    },
+    {
+      "title": "Meatballs",
+      "description": "Portion of meatballs with sour cream, onion and seasonings. Comes with rice or pasta.",
+      "photo": "assets/dishes/meatballs.png",
+      "size": 740,
+      "serving": 3,
+      "price": 120.0,
+      "id": 9,
+      "category": {
+        "id": 3,
+        "label": "Combos"
+      }
+    }
+  ]
