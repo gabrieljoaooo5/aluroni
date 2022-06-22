@@ -28,7 +28,7 @@ export default function Item(props: Props) {
                         {size}g
                     </div>
                     <div className={styles.item__amnt_people}>
-                        For {serving} {serving == 1 ? 'person' : 'people'}
+                        For {serving} {serving === 1 ? 'person' : 'people'}
                     </div>
                     <div className={styles.item__price}>
                         R$ {price.toFixed(2)} 
