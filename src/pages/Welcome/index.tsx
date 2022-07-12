@@ -1,12 +1,12 @@
 import menu from 'data/menu.json';
-import styles from './Start.module.scss';
+import styles from './Welcome.module.scss';
 
-export default function Start() {
+export default function Welcome() {
   let recommendedDishes = [...menu];
   recommendedDishes = recommendedDishes.sort(() => 0.5 - Math.random()).splice(0,3);
   return (
     <section>
-      <h3>
+      <h3 className={styles.title}>
                 Kitchen recommendations
       </h3>
       <div className={styles.recommendedDishes}>
