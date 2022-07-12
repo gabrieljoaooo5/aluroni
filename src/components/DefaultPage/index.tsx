@@ -1,4 +1,5 @@
 import styles from './DefaultPage.module.scss';
+import themeStyles from 'styles/Theme.module.scss';
 import { Outlet } from 'react-router-dom';
 
 export default function DefaultPage() {
@@ -9,7 +10,7 @@ export default function DefaultPage() {
             The pasta house
         </div>
       </header>
-      <div>
+      <div className={themeStyles.container}>
         <Outlet />
       </div>
     </>
