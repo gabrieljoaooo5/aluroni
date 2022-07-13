@@ -10,7 +10,7 @@ import Dish from 'pages/Dish';
 
 export default function AppRouter() {
   return (
-    <main>
+    <main className='container'>
       <Router>
         <Menu />
         <Routes>
@@ -18,8 +18,8 @@ export default function AppRouter() {
             <Route index element={<Welcome />} />
             <Route path='menu' element={<MenuCard />} />
             <Route path='about' element={<About />} />
-            <Route path='dish/:id' element={<Dish />} />
           </Route>
+          <Route path='dish/:id' element={<Dish />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
         <Footer />

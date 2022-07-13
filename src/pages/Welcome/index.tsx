@@ -7,7 +7,7 @@ import { Dish } from 'types/Dish';
 
 export default function Welcome() {
   let recommendedDishes = [...menu];
-  recommendedDishes = recommendedDishes.sort(() => 0.5 - Math.random()).splice(0,3);
+  recommendedDishes = recommendedDishes.sort(() => 0.5 - Math.random()).splice(0,4);
   const navigate = useNavigate();
 
   function redirectToDetails(dish: Dish) {
